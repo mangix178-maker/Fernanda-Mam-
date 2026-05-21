@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para una Madre Especial ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="lluvia-corazones" id="corazones"></div>
+    <div class="contenedor-principal">
+        <header>
+            <h1 class="titulo-principal">✨ ¡Feliz Día de la mamá bella Fernanda! ✨</h1>
+            <p class="subtitulo">Eres una mujer fascinante y llena de luz ❤️❤️❤️</p>
+        <<div class="contenedor-imagen">
+        <img src="img/mama13.jpeg" alt="Fernanda">
+    </div>
+        </header>
+
+        <div class="layout-grid">
+            <div class="columna">
+                <div class="item"><img src="img/mama1.jpg"><h3>Tu sonrisa ilumina el mundo</h3><p class="descripcion">Cada vez que sonríes, el mundo brilla con más fuerza. Eres luz pura, Fernanda. ❤️❤️❤️</p></div>
+                <div class="item"><img src="img/mama2.jpg"><h3>Elegancia que cautiva</h3><p class="descripcion">Tu porte es gracia y distinción natural en cada paso que das. Simplemente fascinante. ✨✨✨</p></div>
+                <div class="item"><img src="img/mama3.jpg"><h3>Nobleza de corazón</h3><p class="descripcion">Tu bondad es el refugio más seguro. Eres el alma más noble que conozco. 💕💕💕</p></div>
+                <div class="item"><img src="img/mama4.jpg"><h3>Fuerza inquebrantable</h3><p class="descripcion">Eres una guerrera de luz. Admiro tu valentía ante cualquier desafío de la vida. 💪💪💪</p></div>
+                <div class="item"><img src="img/mama5.jpg"><h3>Eres pura vida</h3><p class="descripcion">Tu existencia es un milagro que hace que todo sea mejor a tu alrededor. 🌿🌿🌿</p></div>
+            </div>
+
+            <div class="centro">
+                <h2>Eres única</h2>
+                <img src="img/mama9.jpg" class="foto-principal">
+                <p class="texto-central">Tu belleza es todo lo que muestras, la sabiduría en tu mirada y la bondad en cada gesto. Eres una obra de arte viviente. 💖💖💖</p>
+                
+                <img src="img/mama12.jpeg" class="foto-principal" style="margin-top:20px;">
+                <p class="texto-central">Tu esencia es eterna, brillas como ninguna otra. ¡Eres mi todo! ❤️❤️❤️</p>
+
+                <button class="boton-dorado" onclick="lanzarCorazones()">¡Te quiero mucho mamá de mis sueños! 💖</button>
+            </div>
+
+            <div class="columna">
+                <div class="item"><img src="img/mama6.jpg"><h3>Belleza sin igual</h3><p class="descripcion">Tu rostro refleja la paz del mundo. Eres simplemente un ser humano maravilloso. 🐾🐾🐾</p></div>
+                <div class="item"><img src="img/mama7.jpg"><h3>Tu paz es mi calma</h3><p class="descripcion">Tu presencia es el descanso de mi alma, un refugio lleno de amor infinito. ☀️☀️☀️</p></div>
+                <div class="item"><img src="img/mama8.jpg"><h3>Un ser lleno de magia</h3><p class="descripcion">Tu amor crea milagros cada día en las cosas más sencillas. Eres mágica. 🕊️🕊️🕊️</p></div>
+                <div class="item"><img src="img/mama10.jpg"><h3>Eres inspiración total</h3><p class="descripcion">Tu vida es mi ejemplo constante. Gracias por ser quien eres, Fernanda. ✨✨✨</p></div>
+                <div class="item"><img src="img/mama11.jpg"><h3>Magnética y radiante</h3><p class="descripcion">Brillas con luz propia, cautivando corazones por donde quiera que pasas. 🌹🌹🌹</p></div>
+            </div>
+        </div>
+        <footer>Con todo mi cariño, Oshyro. ❤️</footer>
+    </div>
+
+    <script>
+        function lanzarCorazones() {
+            const contenedor = document.getElementById('corazones');
+            for(let i=0; i<30; i++) {
+                const c = document.createElement('div');
+                c.innerHTML = '❤️';
+                c.style.left = Math.random() * 100 + 'vw';
+                c.style.animationDuration = (Math.random() * 2 + 1) + 's';
+                contenedor.appendChild(c);
+                setTimeout(() => c.remove(), 3000);
+            }
+        }
+    </script>
+</body>
+</html>
